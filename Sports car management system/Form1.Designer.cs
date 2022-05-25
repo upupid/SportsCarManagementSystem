@@ -75,11 +75,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 18F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(129, 521);
+            this.label3.Location = new System.Drawing.Point(117, 521);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 24);
+            this.label3.Size = new System.Drawing.Size(82, 24);
             this.label3.TabIndex = 3;
-            this.label3.Text = "密 码";
+            this.label3.Text = "密  码";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
@@ -134,6 +134,7 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.HotPink;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 562);

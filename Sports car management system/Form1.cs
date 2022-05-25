@@ -23,6 +23,7 @@ namespace Sports_car_management_system
             label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
             label4.BackColor = Color.Transparent;
+            statusStrip1.BackColor= Color.Transparent;
 
             button1.BackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
