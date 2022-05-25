@@ -138,7 +138,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 562);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(904, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(901, 22);
             this.statusStrip1.TabIndex = 9;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -154,7 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sports_car_management_system.Properties.Resources.R_C;
-            this.ClientSize = new System.Drawing.Size(904, 584);
+            this.ClientSize = new System.Drawing.Size(901, 584);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -165,6 +165,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.DarkGreen;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
