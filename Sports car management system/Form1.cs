@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+
 namespace Sports_car_management_system
 {
     public partial class Form1 : Form
@@ -41,7 +43,52 @@ namespace Sports_car_management_system
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
+            if (comboBox1.Text.ToString() == "管理部" && textBox1.Text!=""&&textBox2.Text!="")
+            {
+                string user = textBox1.Text;
+                string pwd = textBox2.Text;
+                string sqlstr = $"select * from guanlibu where username='{user}' and password='{pwd}'";
+                SqlDataReader reader =  DBHelper.GetDataReader(sqlstr);
+                if (reader.HasRows)
+                {
+                    MessageBox.Show("登陆成功");
+                }
+                else
+                {
+                    MessageBox.Show("登录失败");
+                }
+            }
+            if (comboBox1.Text.ToString() == "销售部" && textBox1.Text != "" && textBox2.Text != "")
+            {
+                string user = textBox1.Text;
+                string pwd = textBox2.Text;
+                string sqlstr = $"select * from xiaoshoubu where username='{user}' and password='{pwd}'";
+                SqlDataReader reader = DBHelper.GetDataReader(sqlstr);
+                if (reader.HasRows)
+                {
+                    MessageBox.Show("登陆成功");
+                }
+                else
+                {
+                    MessageBox.Show("登录失败");
+                }
+            }
+            if (comboBox1.Text.ToString() == "后勤部" && textBox1.Text != "" && textBox2.Text != "")
+            {
+                string user = textBox1.Text;
+                string pwd = textBox2.Text;
+                string sqlstr = $"select * from houqingbu where username='{user}' and password='{pwd}'";
+                SqlDataReader reader = DBHelper.GetDataReader(sqlstr);
+                if (reader.HasRows)
+                {
+                    MessageBox.Show("登陆成功");
+                }
+                else
+                {
+                    MessageBox.Show("登录失败");
+                }
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
