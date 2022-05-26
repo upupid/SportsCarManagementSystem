@@ -58,7 +58,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("宋体", 11F);
             this.textBox1.Location = new System.Drawing.Point(297, 610);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 28);
             this.textBox1.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 11F);
             this.textBox2.Location = new System.Drawing.Point(297, 651);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(247, 28);
             this.textBox2.TabIndex = 4;
@@ -109,7 +109,7 @@
             "后勤部",
             "管理部"});
             this.comboBox1.Location = new System.Drawing.Point(576, 649);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(247, 26);
             this.comboBox1.TabIndex = 6;
@@ -121,7 +121,7 @@
             this.button1.Font = new System.Drawing.Font("宋体", 15F);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Location = new System.Drawing.Point(851, 604);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 39);
             this.button1.TabIndex = 7;
@@ -134,12 +134,13 @@
             this.button2.Font = new System.Drawing.Font("宋体", 15F);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button2.Location = new System.Drawing.Point(851, 646);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(145, 32);
             this.button2.TabIndex = 8;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // statusStrip1
             // 
@@ -178,7 +179,7 @@
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.Color.DarkGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.RightToLeftLayout = true;
             this.Text = "Form1";

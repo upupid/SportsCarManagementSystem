@@ -53,6 +53,8 @@ namespace Sports_car_management_system
                 if (reader.HasRows)
                 {
                     MessageBox.Show("登陆成功");
+                    Form2 form2 = new Form2();
+                    form2.Show(); 
                 }
                 else
                 {
@@ -68,6 +70,8 @@ namespace Sports_car_management_system
                 if (reader.HasRows)
                 {
                     MessageBox.Show("登陆成功");
+                    Form4 form4 = new Form4();
+                    form4.Show();
                 }
                 else
                 {
@@ -83,6 +87,8 @@ namespace Sports_car_management_system
                 if (reader.HasRows)
                 {
                     MessageBox.Show("登陆成功");
+                    Form5 form5 = new Form5();
+                    form5.Show();
                 }
                 else
                 {
@@ -114,6 +120,20 @@ namespace Sports_car_management_system
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确定要关闭程序吗","提示：",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("您选择了是");
+                Application.Exit(); 
+            }
+            else if (result == DialogResult.No)
+            {
+                MessageBox.Show("您选择了否");
+            }
         }
     }
 }
