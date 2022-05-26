@@ -21,7 +21,7 @@ namespace Sports_car_management_system
         private void 供商信息录入ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
-            
+            //44
             form3.Show();
         }
 
