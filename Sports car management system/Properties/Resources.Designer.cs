@@ -63,6 +63,26 @@ namespace Sports_car_management_system.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _1031119 {
+            get {
+                object obj = ResourceManager.GetObject("1031119", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _10311191 {
+            get {
+                object obj = ResourceManager.GetObject("10311191", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap R_C {
             get {
                 object obj = ResourceManager.GetObject("R-C", resourceCulture);

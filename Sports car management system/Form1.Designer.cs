@@ -168,6 +168,7 @@
             this.ForeColor = System.Drawing.Color.DarkGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
