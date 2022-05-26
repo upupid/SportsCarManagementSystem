@@ -58,8 +58,9 @@ namespace Sports_car_management_system
                 }
                 else
                 {
-                    MessageBox.Show("登录失败");
+                    MessageBox.Show("不存在该用户");
                 }
+                
             }
             if (comboBox1.Text.ToString() == "销售部" && textBox1.Text != "" && textBox2.Text != "")
             {
@@ -75,7 +76,7 @@ namespace Sports_car_management_system
                 }
                 else
                 {
-                    MessageBox.Show("登录失败");
+                    MessageBox.Show("不存在该用户");
                 }
             }
             if (comboBox1.Text.ToString() == "后勤部" && textBox1.Text != "" && textBox2.Text != "")
@@ -92,7 +93,7 @@ namespace Sports_car_management_system
                 }
                 else
                 {
-                    MessageBox.Show("登录失败");
+                    MessageBox.Show("不存在该用户");
                 }
             }
         }
