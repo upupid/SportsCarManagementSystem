@@ -46,7 +46,12 @@ namespace Sports_car_management_system
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

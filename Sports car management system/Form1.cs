@@ -43,7 +43,15 @@ namespace Sports_car_management_system
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
+            if (textBox1.Text=="")
+            {
+                label1.Text = "请输入用户名！";
+                label1.Visible = true;
+                label1.BackColor = Color.Red;
+            }
+
+
             if (comboBox1.Text.ToString() == "管理部" && textBox1.Text!=""&&textBox2.Text!="")
             {
                 string user = textBox1.Text;
@@ -125,16 +133,8 @@ namespace Sports_car_management_system
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("确定要关闭程序吗","提示：",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                MessageBox.Show("您选择了是");
+
                 Application.Exit(); 
-            }
-            else if (result == DialogResult.No)
-            {
-                MessageBox.Show("您选择了否");
-            }
         }
     }
 }
