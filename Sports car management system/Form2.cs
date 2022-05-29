@@ -29,5 +29,11 @@ namespace Sports_car_management_system
         {
             
         }
+
+        private void 供商信息一览ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form7 a = new Form7();
+            a.Show();
+        }
     }
 }
