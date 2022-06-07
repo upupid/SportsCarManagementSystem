@@ -23,5 +23,10 @@ namespace Sports_car_management_system
             this.kuncunpdTableAdapter.Fill(this.haocheDataSet2.kuncunpd);
 
         }
+
+        private void 退出_Click(object sender, EventArgs e)
+        {
+            //1
+        }
     }
 }

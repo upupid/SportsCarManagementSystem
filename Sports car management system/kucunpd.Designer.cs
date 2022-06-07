@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.退出 = new System.Windows.Forms.Button();
-            this.haocheDataSet2 = new Sports_car_management_system.haocheDataSet2();
-            this.kuncunpdBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kuncunpdTableAdapter = new Sports_car_management_system.haocheDataSet2TableAdapters.kuncunpdTableAdapter();
             this.carnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.innumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.warehouseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.warehouseNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inquantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kuncunpdBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.haocheDataSet2 = new Sports_car_management_system.haocheDataSet2();
+            this.退出 = new System.Windows.Forms.Button();
+            this.kuncunpdTableAdapter = new Sports_car_management_system.haocheDataSet2TableAdapters.kuncunpdTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kuncunpdBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -61,29 +61,6 @@
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(803, 354);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // 退出
-            // 
-            this.退出.Location = new System.Drawing.Point(613, 393);
-            this.退出.Name = "退出";
-            this.退出.Size = new System.Drawing.Size(75, 23);
-            this.退出.TabIndex = 1;
-            this.退出.Text = "退出";
-            this.退出.UseVisualStyleBackColor = true;
-            // 
-            // haocheDataSet2
-            // 
-            this.haocheDataSet2.DataSetName = "haocheDataSet2";
-            this.haocheDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // kuncunpdBindingSource
-            // 
-            this.kuncunpdBindingSource.DataMember = "kuncunpd";
-            this.kuncunpdBindingSource.DataSource = this.haocheDataSet2;
-            // 
-            // kuncunpdTableAdapter
-            // 
-            this.kuncunpdTableAdapter.ClearBeforeFill = true;
             // 
             // carnumberDataGridViewTextBoxColumn
             // 
@@ -125,6 +102,30 @@
             this.inquantityDataGridViewTextBoxColumn.Name = "inquantityDataGridViewTextBoxColumn";
             this.inquantityDataGridViewTextBoxColumn.Width = 125;
             // 
+            // kuncunpdBindingSource
+            // 
+            this.kuncunpdBindingSource.DataMember = "kuncunpd";
+            this.kuncunpdBindingSource.DataSource = this.haocheDataSet2;
+            // 
+            // haocheDataSet2
+            // 
+            this.haocheDataSet2.DataSetName = "haocheDataSet2";
+            this.haocheDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // 退出
+            // 
+            this.退出.Location = new System.Drawing.Point(613, 393);
+            this.退出.Name = "退出";
+            this.退出.Size = new System.Drawing.Size(75, 23);
+            this.退出.TabIndex = 1;
+            this.退出.Text = "退出";
+            this.退出.UseVisualStyleBackColor = true;
+            this.退出.Click += new System.EventHandler(this.退出_Click);
+            // 
+            // kuncunpdTableAdapter
+            // 
+            this.kuncunpdTableAdapter.ClearBeforeFill = true;
+            // 
             // kucunpd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -136,8 +137,8 @@
             this.Text = "kucunpd";
             this.Load += new System.EventHandler(this.kucunpd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kuncunpdBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }
