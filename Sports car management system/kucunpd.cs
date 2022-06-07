@@ -16,5 +16,12 @@ namespace Sports_car_management_system
         {
             InitializeComponent();
         }
+
+        private void kucunpd_Load(object sender, EventArgs e)
+        {
+            // TODO: 这行代码将数据加载到表“haocheDataSet2.kuncunpd”中。您可以根据需要移动或移除它。
+            this.kuncunpdTableAdapter.Fill(this.haocheDataSet2.kuncunpd);
+
+        }
     }
 }
