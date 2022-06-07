@@ -46,7 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chuku.Designer.cs">
+      <DependentUpon>chuku.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="Fmm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmm.Designer.cs">
+      <DependentUpon>Fmm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fom.Designer.cs">
+      <DependentUpon>fom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +117,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>haocheDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="kucunpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kucunpd.Designer.cs">
+      <DependentUpon>kucunpd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="chuku.resx">
+      <DependentUpon>chuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmm.resx">
+      <DependentUpon>Fmm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fom.resx">
+      <DependentUpon>fom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kucunpd.resx">
+      <DependentUpon>kucunpd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

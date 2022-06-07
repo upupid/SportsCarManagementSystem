@@ -26,6 +26,7 @@ namespace Sports_car_management_system
             string sql = "select [Carnumber],[Knumber],[warehouse],[WarehouseNo],[Inventory] from [kucun]";
             SqlDataAdapter dap = new SqlDataAdapter(sql,conn);
             dap.Fill(ds);
+
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = ds.Tables[0];
             cmd.Close();
