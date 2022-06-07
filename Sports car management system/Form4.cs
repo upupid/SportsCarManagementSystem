@@ -58,5 +58,10 @@ namespace Sports_car_management_system
         {
                 Close();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
