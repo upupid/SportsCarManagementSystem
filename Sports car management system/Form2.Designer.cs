@@ -36,13 +36,28 @@
             this.供商信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.供商信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.客户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.客户信息录入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.客户信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.客户信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.商品管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.商品信息录入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.商品信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.商品信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.员工管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.员工信息录入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.员工信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.员工信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.其他数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.商品类型设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.进货管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.进货入库ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.采购计划ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.销售管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.销售出库ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.库存管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.库存盘点ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查询统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.进货入库统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关闭系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -60,21 +75,6 @@
             this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel7 = new System.Windows.Forms.ToolStripLabel();
-            this.客户信息录入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.客户信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.客户信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.商品信息录入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.商品信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.商品信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.员工信息录入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.员工信息维护ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.员工信息一览ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.商品类型设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.进货入库ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.采购计划ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.销售出库ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.库存盘点ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.进货入库统计ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -120,20 +120,20 @@
             // 供商信息录入ToolStripMenuItem
             // 
             this.供商信息录入ToolStripMenuItem.Name = "供商信息录入ToolStripMenuItem";
-            this.供商信息录入ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.供商信息录入ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.供商信息录入ToolStripMenuItem.Text = "供商信息录入";
             this.供商信息录入ToolStripMenuItem.Click += new System.EventHandler(this.供商信息录入ToolStripMenuItem_Click);
             // 
             // 供商信息维护ToolStripMenuItem
             // 
             this.供商信息维护ToolStripMenuItem.Name = "供商信息维护ToolStripMenuItem";
-            this.供商信息维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.供商信息维护ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.供商信息维护ToolStripMenuItem.Text = "供商信息维护";
             // 
             // 供商信息一览ToolStripMenuItem
             // 
             this.供商信息一览ToolStripMenuItem.Name = "供商信息一览ToolStripMenuItem";
-            this.供商信息一览ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.供商信息一览ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.供商信息一览ToolStripMenuItem.Text = "供商信息一览";
             this.供商信息一览ToolStripMenuItem.Click += new System.EventHandler(this.供商信息一览ToolStripMenuItem_Click);
             // 
@@ -147,6 +147,24 @@
             this.客户管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.客户管理ToolStripMenuItem.Text = "客户管理";
             // 
+            // 客户信息录入ToolStripMenuItem
+            // 
+            this.客户信息录入ToolStripMenuItem.Name = "客户信息录入ToolStripMenuItem";
+            this.客户信息录入ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.客户信息录入ToolStripMenuItem.Text = "客户信息录入";
+            // 
+            // 客户信息维护ToolStripMenuItem
+            // 
+            this.客户信息维护ToolStripMenuItem.Name = "客户信息维护ToolStripMenuItem";
+            this.客户信息维护ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.客户信息维护ToolStripMenuItem.Text = "客户信息维护";
+            // 
+            // 客户信息一览ToolStripMenuItem
+            // 
+            this.客户信息一览ToolStripMenuItem.Name = "客户信息一览ToolStripMenuItem";
+            this.客户信息一览ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.客户信息一览ToolStripMenuItem.Text = "客户信息一览";
+            // 
             // 商品管理ToolStripMenuItem
             // 
             this.商品管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -156,6 +174,24 @@
             this.商品管理ToolStripMenuItem.Name = "商品管理ToolStripMenuItem";
             this.商品管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.商品管理ToolStripMenuItem.Text = "商品管理";
+            // 
+            // 商品信息录入ToolStripMenuItem
+            // 
+            this.商品信息录入ToolStripMenuItem.Name = "商品信息录入ToolStripMenuItem";
+            this.商品信息录入ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.商品信息录入ToolStripMenuItem.Text = "商品信息录入";
+            // 
+            // 商品信息维护ToolStripMenuItem
+            // 
+            this.商品信息维护ToolStripMenuItem.Name = "商品信息维护ToolStripMenuItem";
+            this.商品信息维护ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.商品信息维护ToolStripMenuItem.Text = "商品查找";
+            // 
+            // 商品信息一览ToolStripMenuItem
+            // 
+            this.商品信息一览ToolStripMenuItem.Name = "商品信息一览ToolStripMenuItem";
+            this.商品信息一览ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.商品信息一览ToolStripMenuItem.Text = "商品信息一览";
             // 
             // 员工管理ToolStripMenuItem
             // 
@@ -167,6 +203,24 @@
             this.员工管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.员工管理ToolStripMenuItem.Text = "员工管理";
             // 
+            // 员工信息录入ToolStripMenuItem
+            // 
+            this.员工信息录入ToolStripMenuItem.Name = "员工信息录入ToolStripMenuItem";
+            this.员工信息录入ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.员工信息录入ToolStripMenuItem.Text = "员工信息录入";
+            // 
+            // 员工信息维护ToolStripMenuItem
+            // 
+            this.员工信息维护ToolStripMenuItem.Name = "员工信息维护ToolStripMenuItem";
+            this.员工信息维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.员工信息维护ToolStripMenuItem.Text = "员工信息维护";
+            // 
+            // 员工信息一览ToolStripMenuItem
+            // 
+            this.员工信息一览ToolStripMenuItem.Name = "员工信息一览ToolStripMenuItem";
+            this.员工信息一览ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.员工信息一览ToolStripMenuItem.Text = "员工信息查询";
+            // 
             // 其他数据ToolStripMenuItem
             // 
             this.其他数据ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -174,6 +228,12 @@
             this.其他数据ToolStripMenuItem.Name = "其他数据ToolStripMenuItem";
             this.其他数据ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.其他数据ToolStripMenuItem.Text = "其他数据";
+            // 
+            // 商品类型设置ToolStripMenuItem
+            // 
+            this.商品类型设置ToolStripMenuItem.Name = "商品类型设置ToolStripMenuItem";
+            this.商品类型设置ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.商品类型设置ToolStripMenuItem.Text = "商品类型设置";
             // 
             // 进货管理ToolStripMenuItem
             // 
@@ -184,6 +244,18 @@
             this.进货管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.进货管理ToolStripMenuItem.Text = "进货管理";
             // 
+            // 进货入库ToolStripMenuItem
+            // 
+            this.进货入库ToolStripMenuItem.Name = "进货入库ToolStripMenuItem";
+            this.进货入库ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.进货入库ToolStripMenuItem.Text = "进货入库";
+            // 
+            // 采购计划ToolStripMenuItem
+            // 
+            this.采购计划ToolStripMenuItem.Name = "采购计划ToolStripMenuItem";
+            this.采购计划ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.采购计划ToolStripMenuItem.Text = "采购计划";
+            // 
             // 销售管理ToolStripMenuItem
             // 
             this.销售管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -191,6 +263,12 @@
             this.销售管理ToolStripMenuItem.Name = "销售管理ToolStripMenuItem";
             this.销售管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.销售管理ToolStripMenuItem.Text = "销售管理";
+            // 
+            // 销售出库ToolStripMenuItem
+            // 
+            this.销售出库ToolStripMenuItem.Name = "销售出库ToolStripMenuItem";
+            this.销售出库ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.销售出库ToolStripMenuItem.Text = "销售出库";
             // 
             // 库存管理ToolStripMenuItem
             // 
@@ -200,6 +278,12 @@
             this.库存管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.库存管理ToolStripMenuItem.Text = "库存管理";
             // 
+            // 库存盘点ToolStripMenuItem
+            // 
+            this.库存盘点ToolStripMenuItem.Name = "库存盘点ToolStripMenuItem";
+            this.库存盘点ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.库存盘点ToolStripMenuItem.Text = "库存盘点";
+            // 
             // 查询统计ToolStripMenuItem
             // 
             this.查询统计ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -207,6 +291,12 @@
             this.查询统计ToolStripMenuItem.Name = "查询统计ToolStripMenuItem";
             this.查询统计ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.查询统计ToolStripMenuItem.Text = "查询统计";
+            // 
+            // 进货入库统计ToolStripMenuItem
+            // 
+            this.进货入库统计ToolStripMenuItem.Name = "进货入库统计ToolStripMenuItem";
+            this.进货入库统计ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.进货入库统计ToolStripMenuItem.Text = "进货入库统计";
             // 
             // 系统关于ToolStripMenuItem
             // 
@@ -348,96 +438,6 @@
             this.toolStripLabel7.Name = "toolStripLabel7";
             this.toolStripLabel7.Size = new System.Drawing.Size(56, 22);
             this.toolStripLabel7.Text = "进货计划";
-            // 
-            // 客户信息录入ToolStripMenuItem
-            // 
-            this.客户信息录入ToolStripMenuItem.Name = "客户信息录入ToolStripMenuItem";
-            this.客户信息录入ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.客户信息录入ToolStripMenuItem.Text = "客户信息录入";
-            // 
-            // 客户信息维护ToolStripMenuItem
-            // 
-            this.客户信息维护ToolStripMenuItem.Name = "客户信息维护ToolStripMenuItem";
-            this.客户信息维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.客户信息维护ToolStripMenuItem.Text = "客户信息维护";
-            // 
-            // 客户信息一览ToolStripMenuItem
-            // 
-            this.客户信息一览ToolStripMenuItem.Name = "客户信息一览ToolStripMenuItem";
-            this.客户信息一览ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.客户信息一览ToolStripMenuItem.Text = "客户信息一览";
-            // 
-            // 商品信息录入ToolStripMenuItem
-            // 
-            this.商品信息录入ToolStripMenuItem.Name = "商品信息录入ToolStripMenuItem";
-            this.商品信息录入ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.商品信息录入ToolStripMenuItem.Text = "商品信息录入";
-            // 
-            // 商品信息维护ToolStripMenuItem
-            // 
-            this.商品信息维护ToolStripMenuItem.Name = "商品信息维护ToolStripMenuItem";
-            this.商品信息维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.商品信息维护ToolStripMenuItem.Text = "商品信息维护";
-            // 
-            // 商品信息一览ToolStripMenuItem
-            // 
-            this.商品信息一览ToolStripMenuItem.Name = "商品信息一览ToolStripMenuItem";
-            this.商品信息一览ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.商品信息一览ToolStripMenuItem.Text = "商品信息一览";
-            // 
-            // 员工信息录入ToolStripMenuItem
-            // 
-            this.员工信息录入ToolStripMenuItem.Name = "员工信息录入ToolStripMenuItem";
-            this.员工信息录入ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.员工信息录入ToolStripMenuItem.Text = "员工信息录入";
-            // 
-            // 员工信息维护ToolStripMenuItem
-            // 
-            this.员工信息维护ToolStripMenuItem.Name = "员工信息维护ToolStripMenuItem";
-            this.员工信息维护ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.员工信息维护ToolStripMenuItem.Text = "员工信息维护";
-            // 
-            // 员工信息一览ToolStripMenuItem
-            // 
-            this.员工信息一览ToolStripMenuItem.Name = "员工信息一览ToolStripMenuItem";
-            this.员工信息一览ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.员工信息一览ToolStripMenuItem.Text = "员工信息一览";
-            // 
-            // 商品类型设置ToolStripMenuItem
-            // 
-            this.商品类型设置ToolStripMenuItem.Name = "商品类型设置ToolStripMenuItem";
-            this.商品类型设置ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.商品类型设置ToolStripMenuItem.Text = "商品类型设置";
-            // 
-            // 进货入库ToolStripMenuItem
-            // 
-            this.进货入库ToolStripMenuItem.Name = "进货入库ToolStripMenuItem";
-            this.进货入库ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.进货入库ToolStripMenuItem.Text = "进货入库";
-            // 
-            // 采购计划ToolStripMenuItem
-            // 
-            this.采购计划ToolStripMenuItem.Name = "采购计划ToolStripMenuItem";
-            this.采购计划ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.采购计划ToolStripMenuItem.Text = "采购计划";
-            // 
-            // 销售出库ToolStripMenuItem
-            // 
-            this.销售出库ToolStripMenuItem.Name = "销售出库ToolStripMenuItem";
-            this.销售出库ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.销售出库ToolStripMenuItem.Text = "销售出库";
-            // 
-            // 库存盘点ToolStripMenuItem
-            // 
-            this.库存盘点ToolStripMenuItem.Name = "库存盘点ToolStripMenuItem";
-            this.库存盘点ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.库存盘点ToolStripMenuItem.Text = "库存盘点";
-            // 
-            // 进货入库统计ToolStripMenuItem
-            // 
-            this.进货入库统计ToolStripMenuItem.Name = "进货入库统计ToolStripMenuItem";
-            this.进货入库统计ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.进货入库统计ToolStripMenuItem.Text = "进货入库统计";
             // 
             // Form2
             // 
