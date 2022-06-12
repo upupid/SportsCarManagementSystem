@@ -56,10 +56,11 @@
             this.inquantityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.kuncunpdBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(-2, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 354);
+            this.dataGridView1.Size = new System.Drawing.Size(602, 283);
             this.dataGridView1.TabIndex = 0;
             // 
             // carnumberDataGridViewTextBoxColumn
@@ -114,9 +115,10 @@
             // 
             // 退出
             // 
-            this.退出.Location = new System.Drawing.Point(613, 393);
+            this.退出.Location = new System.Drawing.Point(460, 314);
+            this.退出.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.退出.Name = "退出";
-            this.退出.Size = new System.Drawing.Size(75, 23);
+            this.退出.Size = new System.Drawing.Size(56, 18);
             this.退出.TabIndex = 1;
             this.退出.Text = "退出";
             this.退出.UseVisualStyleBackColor = true;
@@ -128,11 +130,12 @@
             // 
             // kucunpd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(602, 360);
             this.Controls.Add(this.退出);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "kucunpd";
             this.Text = "kucunpd";
             this.Load += new System.EventHandler(this.kucunpd_Load);

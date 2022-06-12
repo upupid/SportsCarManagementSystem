@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,7 +46,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.haocheDataSet3 = new Sports_car_management_system.haocheDataSet3();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientTableAdapter = new Sports_car_management_system.haocheDataSet3TableAdapters.clientTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -74,12 +86,23 @@
             this.button1.TabIndex = 46;
             this.button1.Text = "修改";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.ageDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn,
+            this.unitDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.clientBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(1, 205);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(798, 185);
             this.dataGridView1.TabIndex = 45;
@@ -203,6 +226,56 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "客户编号";
             // 
+            // haocheDataSet3
+            // 
+            this.haocheDataSet3.DataSetName = "haocheDataSet3";
+            this.haocheDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "client";
+            this.clientBindingSource.DataSource = this.haocheDataSet3;
+            // 
+            // clientTableAdapter
+            // 
+            this.clientTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "客户编号";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "顾客姓名";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "性别";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "手机号码";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            // 
+            // unitDataGridViewTextBoxColumn
+            // 
+            this.unitDataGridViewTextBoxColumn.DataPropertyName = "unit";
+            this.unitDataGridViewTextBoxColumn.HeaderText = "工作单位";
+            this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "地址";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -227,7 +300,10 @@
             this.Controls.Add(this.label1);
             this.Name = "Form9";
             this.Text = "客户信息维护";
+            this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +328,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private haocheDataSet3 haocheDataSet3;
+        private System.Windows.Forms.BindingSource clientBindingSource;
+        private haocheDataSet3TableAdapters.clientTableAdapter clientTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
     }
 }
