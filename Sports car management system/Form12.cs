@@ -45,20 +45,5 @@ namespace Sports_car_management_system
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string name = dataGridView1.ToString();
-            string color = dataGridView1.ToString();
-            string sql = string.Format("Update Productentry set Qnumbering='43',Name='小明',color='瑟夫',Jprice='24',Xprice='234',Xscka='3234',Dscka='324',Yscka='324',Introduce='阿发' where Name={0},color={1}",Name,color );
-            if (DBHelper.ExecuteNonQuery(sql))
-            {
-                MessageBox.Show("修改成功");
-            }
-            else
-            {
-                MessageBox.Show("修改失败");
-            }
-        }
     }
 }
