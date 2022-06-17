@@ -78,6 +78,7 @@
             this.button2.TabIndex = 58;
             this.button2.Text = "删除";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -87,6 +88,7 @@
             this.button1.TabIndex = 57;
             this.button1.Text = "修改";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox6
             // 
@@ -274,6 +276,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form15";
             this.Text = "员工信息维护";
+            this.Load += new System.EventHandler(this.Form15_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

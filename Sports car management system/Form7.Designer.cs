@@ -43,11 +43,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.huhuTableAdapter = new Sports_car_management_system.haocheDataSet1TableAdapters.huhuTableAdapter();
             this.haocheDataSet2 = new Sports_car_management_system.haocheDataSet();
+            this.haocheDataSet4 = new Sports_car_management_system.haocheDataSet4();
+            this.guanlibuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.guanlibuTableAdapter = new Sports_car_management_system.haocheDataSet4TableAdapters.guanlibuTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.huhuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guanlibuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -166,6 +171,20 @@
             this.haocheDataSet2.DataSetName = "haocheDataSet";
             this.haocheDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // haocheDataSet4
+            // 
+            this.haocheDataSet4.DataSetName = "haocheDataSet4";
+            this.haocheDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // guanlibuBindingSource
+            // 
+            this.guanlibuBindingSource.DataMember = "guanlibu";
+            this.guanlibuBindingSource.DataSource = this.haocheDataSet4;
+            // 
+            // guanlibuTableAdapter
+            // 
+            this.guanlibuTableAdapter.ClearBeforeFill = true;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -182,6 +201,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.haocheDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guanlibuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -202,5 +223,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bankDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private haocheDataSet haocheDataSet2;
+        private haocheDataSet4 haocheDataSet4;
+        private System.Windows.Forms.BindingSource guanlibuBindingSource;
+        private haocheDataSet4TableAdapters.guanlibuTableAdapter guanlibuTableAdapter;
     }
 }

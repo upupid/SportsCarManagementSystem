@@ -32,10 +32,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +42,10 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "修改";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
             // 
@@ -96,45 +97,6 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(800, 186);
             this.dataGridView1.TabIndex = 18;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(414, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 30);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "查找";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox2.Location = new System.Drawing.Point(248, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(108, 26);
-            this.textBox2.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 13F);
-            this.label3.Location = new System.Drawing.Point(260, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 18);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "商品名称";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 13F);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(29, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 18);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "快速查找";
             // 
             // Column1
             // 
@@ -195,6 +157,45 @@
             this.Column10.DataPropertyName = "Inteoduce";
             this.Column10.HeaderText = "汽车介绍";
             this.Column10.Name = "Column10";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(414, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 30);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "查找";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox2.Location = new System.Drawing.Point(248, 128);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(108, 26);
+            this.textBox2.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 13F);
+            this.label3.Location = new System.Drawing.Point(260, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "商品名称";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 13F);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(29, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 18);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "快速查找";
             // 
             // Form12
             // 

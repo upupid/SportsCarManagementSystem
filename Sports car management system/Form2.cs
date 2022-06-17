@@ -12,7 +12,8 @@ namespace Sports_car_management_system
 {
     public partial class Form2 : Form
     {
-       
+        public static Form2 form2 = new Form2();
+        Color color = new Color();
         public Form2()
         {
             InitializeComponent();
@@ -129,6 +130,77 @@ namespace Sports_car_management_system
         private void 进货入库统计ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+       
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            form2.BackColor = Color.Red;
+        }
+
+        private void Form2_Click(object sender, EventArgs e)
+        {
+            if (BackColor ==Color.Red)
+            {
+                BackColor = Color.Yellow;
+            }
+            else if (BackColor == Color.Yellow)
+            {
+                BackColor = Color.Green;
+            }
+            else
+            {
+                BackColor = Color.Red;
+            }
+
+        }
+
+        private void 默认ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (BackColor == Color.Red  || BackColor == Color.Green || BackColor == Color.Blue)
+            {
+                BackColor = Color.LightGray;
+            }
+        }
+
+        private void 主题ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          //if (BackColor == Color.Red)
+          //  {
+          //      BackColor = Color.Yellow;
+          //  }
+          //  else if (BackColor == Color.Yellow)
+          //  {
+          //      BackColor = Color.Green;
+          //  }
+          //  else
+          //  {
+          //      BackColor = Color.Red;
+          //  }
+        }
+
+        private void 红色ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (BackColor == Color.LightGray || BackColor == Color.Green || BackColor == Color.Blue)
+            {
+                BackColor = Color.Red;
+            }
+        }
+        private void 绿色ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (BackColor == Color.Red || BackColor == Color.LightGray || BackColor == Color.Blue)
+            {
+                BackColor = Color.Green;
+            }
+        }
+
+        private void 蓝色ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (BackColor == Color.Red || BackColor == Color.LightGray || BackColor == Color.Green)
+            {
+                BackColor = Color.Blue;
+            }
         }
     }
 }

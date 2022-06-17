@@ -21,6 +21,10 @@ namespace Sports_car_management_system
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
+
+
             //label1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
@@ -30,15 +34,20 @@ namespace Sports_car_management_system
             button1.BackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
             button1.FlatAppearance.BorderSize = 0;
-
             button2.BackColor = Color.Transparent;
             button2.FlatStyle = FlatStyle.Flat;
             button2.FlatAppearance.BorderSize = 0;
+            comboBox1.Text = "管理部";
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+        public  string name()
+        {
+            string name = textBox1.Text;
+            return name;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -135,6 +144,11 @@ namespace Sports_car_management_system
         {
 
                 Application.Exit(); 
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

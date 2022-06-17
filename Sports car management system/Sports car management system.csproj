@@ -199,6 +199,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>haocheDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="haocheDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="kucunpd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +334,17 @@
     </None>
     <None Include="haocheDataSet3.xss">
       <DependentUpon>haocheDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet4.xsc">
+      <DependentUpon>haocheDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet4.xss">
+      <DependentUpon>haocheDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
