@@ -214,6 +214,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>haocheDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="haocheDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="haocheDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="kucunpd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +387,28 @@
     </None>
     <None Include="haocheDataSet6.xss">
       <DependentUpon>haocheDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet7.xsc">
+      <DependentUpon>haocheDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet7.xss">
+      <DependentUpon>haocheDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet8.xsc">
+      <DependentUpon>haocheDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet8.xss">
+      <DependentUpon>haocheDataSet8.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

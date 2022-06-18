@@ -24,7 +24,7 @@ namespace Sports_car_management_system
             {
                 string conn = "server=.;database=haoche;uid =sa;pwd =1234";
                 DataSet ds = new DataSet();
-               
+
                 SqlConnection cmd = new SqlConnection(conn);//iitial catalog
                 string a = textBox1.Text;
                 string sql = string.Format("select * from client where name like '%{0}%'", a);
@@ -35,10 +35,18 @@ namespace Sports_car_management_system
                 cmd.Close();
                 cmd.Dispose();
             }
+            else
+            {
+                MessageBox.Show("请输入名称");
+            }
         }
 
         private void Form10_Load(object sender, EventArgs e)
         {
+            // TODO: 这行代码将数据加载到表“haocheDataSet8.client”中。您可以根据需要移动或移除它。
+            this.clientTableAdapter1.Fill(this.haocheDataSet8.client);
+            // TODO: 这行代码将数据加载到表“haocheDataSet7.client”中。您可以根据需要移动或移除它。
+            this.clientTableAdapter.Fill(this.haocheDataSet7.client);
 
         }
     }

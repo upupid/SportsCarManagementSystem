@@ -141,18 +141,7 @@ namespace Sports_car_management_system
 
         private void Form2_Click(object sender, EventArgs e)
         {
-            if (BackColor ==Color.Red)
-            {
-                BackColor = Color.Yellow;
-            }
-            else if (BackColor == Color.Yellow)
-            {
-                BackColor = Color.Green;
-            }
-            else
-            {
-                BackColor = Color.Red;
-            }
+
 
         }
 
