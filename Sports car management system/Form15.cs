@@ -40,7 +40,18 @@ namespace Sports_car_management_system
             if (DBHelper.ExecuteNonQuery(sql))
             {
                 MessageBox.Show("修改成功~");
+                string conn = "server=.;database=haoche;uid =sa;pwd =1234";
+                DataSet ds = new DataSet();
 
+                SqlConnection cmd = new SqlConnection(conn);//iitial catalog
+                string a = textBox1.Text;
+                string str = string.Format("select * from yuangong");
+                SqlDataAdapter dap = new SqlDataAdapter(str, cmd);
+                dap.Fill(ds);
+                dataGridView1.AutoGenerateColumns = false;
+                dataGridView1.DataSource = ds.Tables[0];
+                cmd.Close();
+                cmd.Dispose();
             }
             else
             {
@@ -77,6 +88,18 @@ namespace Sports_car_management_system
             if (DBHelper.ExecuteNonQuery(sql))
             {
                 MessageBox.Show("删除成功");
+                string conn = "server=.;database=haoche;uid =sa;pwd =1234";
+                DataSet ds = new DataSet();
+
+                SqlConnection cmd = new SqlConnection(conn);//iitial catalog
+                string a = textBox1.Text;
+                string str = string.Format("select * from yuangong");
+                SqlDataAdapter dap = new SqlDataAdapter(str, cmd);
+                dap.Fill(ds);
+                dataGridView1.AutoGenerateColumns = false;
+                dataGridView1.DataSource = ds.Tables[0];
+                cmd.Close();
+                cmd.Dispose();
             }
             else
             {

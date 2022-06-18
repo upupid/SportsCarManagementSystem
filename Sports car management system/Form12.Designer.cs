@@ -218,7 +218,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form12";
             this.Text = "商品查找";
-            this.Load += new System.EventHandler(this.Form12_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
