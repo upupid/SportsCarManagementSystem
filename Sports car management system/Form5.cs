@@ -32,15 +32,9 @@ namespace Sports_car_management_system
             cmd.Close();
             cmd.Dispose();
         }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
     }
 }

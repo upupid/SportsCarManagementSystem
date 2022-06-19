@@ -16,5 +16,12 @@ namespace Sports_car_management_system
         {
             InitializeComponent();
         }
+
+        private void Form19_Load(object sender, EventArgs e)
+        {
+            // TODO: 这行代码将数据加载到表“haocheDataSet9.caigou”中。您可以根据需要移动或移除它。
+            this.caigouTableAdapter.Fill(this.haocheDataSet9.caigou);
+
+        }
     }
 }

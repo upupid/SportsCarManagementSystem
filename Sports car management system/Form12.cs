@@ -41,6 +41,14 @@ namespace Sports_car_management_system
             }
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
+        private void Form12_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

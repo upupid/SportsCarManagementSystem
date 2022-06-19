@@ -44,5 +44,10 @@ namespace Sports_car_management_system
             }
             conn.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

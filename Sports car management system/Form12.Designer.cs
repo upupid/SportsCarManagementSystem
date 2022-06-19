@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,21 +49,14 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(685, 399);
+            this.button5.Location = new System.Drawing.Point(913, 499);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 34);
+            this.button5.Size = new System.Drawing.Size(112, 42);
             this.button5.TabIndex = 21;
             this.button5.Text = "退出";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(583, 399);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 34);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "删除";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 
@@ -81,11 +73,12 @@
             this.Column8,
             this.Column9,
             this.Column10});
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 198);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, 248);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 186);
+            this.dataGridView1.Size = new System.Drawing.Size(1067, 232);
             this.dataGridView1.TabIndex = 18;
             // 
             // Column1
@@ -170,9 +163,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(414, 124);
+            this.button1.Location = new System.Drawing.Point(552, 155);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 30);
+            this.button1.Size = new System.Drawing.Size(108, 38);
             this.button1.TabIndex = 16;
             this.button1.Text = "查找";
             this.button1.UseVisualStyleBackColor = true;
@@ -181,44 +175,45 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox2.Location = new System.Drawing.Point(248, 128);
+            this.textBox2.Location = new System.Drawing.Point(331, 160);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(108, 26);
+            this.textBox2.Size = new System.Drawing.Size(143, 30);
             this.textBox2.TabIndex = 15;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 13F);
-            this.label3.Location = new System.Drawing.Point(260, 91);
+            this.label3.Location = new System.Drawing.Point(347, 114);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 14;
             this.label3.Text = "商品名称";
             // 
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 18);
+            this.label1.Size = new System.Drawing.Size(100, 22);
             this.label1.TabIndex = 22;
             // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form12";
             this.Text = "商品查找";
-
+            this.Load += new System.EventHandler(this.Form12_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,7 +223,6 @@
         #endregion
 
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;

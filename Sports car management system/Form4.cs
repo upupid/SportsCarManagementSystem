@@ -18,10 +18,6 @@ namespace Sports_car_management_system
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -57,11 +53,6 @@ namespace Sports_car_management_system
         private void button2_Click(object sender, EventArgs e)
         {
                 Close();
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

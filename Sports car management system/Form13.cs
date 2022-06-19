@@ -16,5 +16,17 @@ namespace Sports_car_management_system
         {
             InitializeComponent();
         }
+
+        private void Form13_Load(object sender, EventArgs e)
+        {
+            // TODO: 这行代码将数据加载到表“haocheDataSet13.Productentry”中。您可以根据需要移动或移除它。
+            this.productentryTableAdapter.Fill(this.haocheDataSet13.Productentry);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

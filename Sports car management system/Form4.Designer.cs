@@ -99,7 +99,7 @@
             this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 4;
             this.label4.Text = "商品名称";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+
             // 
             // label5
             // 
@@ -287,7 +287,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4";
             this.Text = "销售部";
-            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

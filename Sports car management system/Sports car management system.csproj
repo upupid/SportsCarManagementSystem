@@ -189,6 +189,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>haocheDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="haocheDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="haocheDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="haocheDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="haocheDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="haocheDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -223,6 +243,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>haocheDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="haocheDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>haocheDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="kucunpd.cs">
       <SubType>Form</SubType>
@@ -333,6 +358,50 @@
     <None Include="haocheDataSet1.xss">
       <DependentUpon>haocheDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="haocheDataSet10.xsc">
+      <DependentUpon>haocheDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet10.xss">
+      <DependentUpon>haocheDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet11.xsc">
+      <DependentUpon>haocheDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet11.xss">
+      <DependentUpon>haocheDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet12.xsc">
+      <DependentUpon>haocheDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet12.xss">
+      <DependentUpon>haocheDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet13.xsc">
+      <DependentUpon>haocheDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet13.xss">
+      <DependentUpon>haocheDataSet13.xsd</DependentUpon>
+    </None>
     <None Include="haocheDataSet2.xsc">
       <DependentUpon>haocheDataSet2.xsd</DependentUpon>
     </None>
@@ -409,6 +478,17 @@
     </None>
     <None Include="haocheDataSet8.xss">
       <DependentUpon>haocheDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet9.xsc">
+      <DependentUpon>haocheDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="haocheDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>haocheDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="haocheDataSet9.xss">
+      <DependentUpon>haocheDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -429,7 +429,7 @@
             this.toolStripLabel5.Name = "toolStripLabel5";
             this.toolStripLabel5.Size = new System.Drawing.Size(56, 22);
             this.toolStripLabel5.Text = "库存盘点";
-            this.toolStripLabel5.Click += new System.EventHandler(this.toolStripLabel5_Click);
+
             // 
             // toolStripButton6
             // 
@@ -514,7 +514,6 @@
             this.Text = "Form2";
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.Click += new System.EventHandler(this.Form2_Click);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);

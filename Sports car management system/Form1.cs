@@ -40,16 +40,6 @@ namespace Sports_car_management_system
             comboBox1.Text = "管理部";
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        public  string name()
-        {
-            string name = textBox1.Text;
-            return name;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -57,7 +47,8 @@ namespace Sports_car_management_system
             {
                 label1.Text = "请输入用户名！";
                 label1.Visible = true;
-                label1.BackColor = Color.Red;
+                label1.ForeColor = Color.Red;
+                this.label1.BackColor = Color.Transparent;
             }
 
 
@@ -115,40 +106,10 @@ namespace Sports_car_management_system
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
 
                 Application.Exit(); 
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

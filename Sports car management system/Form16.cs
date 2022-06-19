@@ -35,29 +35,7 @@ namespace Sports_car_management_system
                 cmd.Close();
                 cmd.Dispose();
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void Form16_Load(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
@@ -71,6 +49,11 @@ namespace Sports_car_management_system
             dataGridView1.DataSource = ds.Tables[0];
             cmd.Close();
             cmd.Dispose();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();    
         }
     }
 }

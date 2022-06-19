@@ -49,5 +49,10 @@ namespace Sports_car_management_system
             this.clientTableAdapter.Fill(this.haocheDataSet7.client);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

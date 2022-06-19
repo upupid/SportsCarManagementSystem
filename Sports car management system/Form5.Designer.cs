@@ -129,7 +129,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form5";
             this.Text = "库存盘点";
-            this.Load += new System.EventHandler(this.Form5_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

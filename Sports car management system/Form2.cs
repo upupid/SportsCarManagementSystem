@@ -26,11 +26,6 @@ namespace Sports_car_management_system
             form3.Show();
         }
 
-        private void toolStripLabel5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void 供商信息一览ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form7 a = new Form7();
@@ -129,7 +124,8 @@ namespace Sports_car_management_system
 
         private void 进货入库统计ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form18 form18=new Form18();
+            form18.Show();  
         }
 
        
@@ -138,13 +134,6 @@ namespace Sports_car_management_system
         {
             form2.BackColor = Color.Red;
         }
-
-        private void Form2_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void 默认ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (BackColor == Color.Red  || BackColor == Color.Green || BackColor == Color.Blue)

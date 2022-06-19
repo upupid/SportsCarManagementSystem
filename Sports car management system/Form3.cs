@@ -11,11 +11,6 @@ namespace Sports_car_management_system
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string connstr = "server=.;database=haoche;uid=sa;pwd=1234";
@@ -49,9 +44,5 @@ namespace Sports_car_management_system
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

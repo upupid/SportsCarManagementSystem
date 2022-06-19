@@ -34,7 +34,7 @@ namespace Sports_car_management_system
             string beizhu = textBox5.Text;
             string fukuan = comboBox2.Text;
             string jinhuo = comboBox3.Text;
-            string sql = string.Format("insert into jinhuok values('{0}','{1}','{2}','{3}','{4}','{5}','[6]')", gonshang, riqi, huowu, shuliang, beizhu, fukuan,jinhuo);
+            string sql = string.Format("insert into jinhuok values('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", gonshang, riqi, huowu, shuliang, beizhu, fukuan,jinhuo);
             if (DBHelper.ExecuteNonQuery(sql))
             {
                 MessageBox.Show("添加成功");
@@ -55,6 +55,11 @@ namespace Sports_car_management_system
             {
                 MessageBox.Show("添加失败");    
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();    
         }
     }
 }
